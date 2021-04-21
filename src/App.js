@@ -152,25 +152,34 @@ function Keyboard(props) {
 	);
 }
 
-function Notes() {
-    return (
-      <div>
-		<Keyboard/>
-		<CreateNotes/>
-      </div>
-    )
+function Cards() {
+	const cardCategory = "Standards"
+	const cardTitle = "Don't Cry For Me, Argentina"
+	const cardNotes = "5-5 5 5-6 8 10 8-----8 10 10-8 13-8-6-5"
+	
+	return (
+		<div className="card__cards">
+			<div className="card__card">
+		   	 	<div className="card__category">{cardCategory}</div>
+ 		 			<div className="card__title">{cardTitle}</div>
+				<div className="card__notes">{cardNotes}</div>
+			</div>
+		</div>
+	);
 }
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-	  	<h1>Noteability</h1>
-	  	<Notes/>
-	  	<HandleKeypress/>
-      </header>
-    </div>
-  );
+	return (
+    	<div className="App">
+      		<header className="App-header">
+	  			<h1 className="title">Noteability</h1>
+		  	</header>
+		  	<Cards/>
+			<Keyboard/>
+			<CreateNotes/>
+			<HandleKeypress/>
+		</div>
+	);
 }
 
 export default App;

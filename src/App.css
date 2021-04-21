@@ -10,6 +10,11 @@ html,body {
 
 .App {
   text-align: center;
+	touch-action: manipulation;
+}
+
+.title {
+	
 }
 
 .notes {
@@ -70,4 +75,12 @@ html,body {
 
 .keyboard__key-label--white {
 	border-color: var(--black);
+}
+
+.card__card {
+	background-color: var(--white);
+}
+
+.card {
+	background-color: var(--white);
 }
