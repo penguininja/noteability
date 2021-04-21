@@ -6,15 +6,17 @@
 html,body {
 	background-color: black;
 	min-height: 100vh;
+	touch-action: manipulation;
 }
 
 .App {
   text-align: center;
-	touch-action: manipulation;
 }
 
 .title {
-	
+	color: var(--white);
+	margin-top: 10px;
+	margin-bottom: 0;
 }
 
 .notes {
@@ -42,6 +44,7 @@ html,body {
 	justify-content: flex-end;
 	box-shadow: none;
 	padding: 0;
+	touch-action: manipulation;
 	width: 10vw;
 }
 
@@ -77,10 +80,24 @@ html,body {
 	border-color: var(--black);
 }
 
-.card__card {
-	background-color: var(--white);
+.card__cards {
+	display: flex;
+	justify-content: center;
 }
 
-.card {
+.card__card {
 	background-color: var(--white);
+	margin: 20px;
+	padding: 20px;
+}
+
+.card__notes {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.card__title {
+	font-weight: normal;
+	margin-top: 8px;
+	margin-bottom: 12px;
 }
