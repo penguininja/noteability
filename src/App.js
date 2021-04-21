@@ -11,8 +11,8 @@ function CreateNotes() {
 	    // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
 	    notes.push(	
 			<li>
-				<audio id={"note-" + i}>
-	            	<source src={"/notes/noteability" + i + ".wav"}></source>
+				<audio preload="auto" id={"note-" + i}>
+	            	<source src={"/notes/noteability" + i + ".mp3"}></source>
 				</audio>
 			</li>
 		);
