@@ -1,7 +1,6 @@
 FROM node:15-buster-slim
 
 USER 0
-
 WORKDIR /app
 
 ADD . .
