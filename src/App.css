@@ -1,0 +1,73 @@
+:root {
+  --white: #ffffff;
+	--black: #000000;
+}
+
+html,body {
+	background-color: black;
+	min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.notes {
+	display: none;
+}
+
+.keyboard {
+	display: flex;
+	height: 20vw;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+.keyboard__key {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	align-items: center;
+	appearance: none;
+	cursor: pointer;
+	display: flex;
+	height: 100%;	
+	flex-direction: column;
+	justify-content: flex-end;
+	box-shadow: none;
+	padding: 0;
+	width: 10vw;
+}
+
+.keyboard__key--white {
+	background-color: var(--white);
+	border: 1px solid var(--black);
+}
+
+.keyboard__key--black {
+	height: 10vw;
+	background-color: var(--black);
+	border: 1px solid var(--white);
+	position: absolute;
+	transform: translateX(-50%);
+	width: 6vw;
+}
+
+.keyboard__key-label {
+	background-color: var(--white);
+	border: 1px solid var(--white);
+	border-radius: 100%;
+	display: flex;
+	font-size: 18px;
+	height: 40px;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 40px;
+}
+
+.keyboard__key-label--white {
+	border-color: var(--black);
+}
