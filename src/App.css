@@ -1,10 +1,14 @@
+/* root styles */
 :root {
   --white: #ffffff;
 	--black: #000000;
+	--montserrat: 'Montserrat', sans-serif;
+	--limelight:  'Limelight', cursive;
 }
 
 html,body {
 	background-color: black;
+	font-family: var(--montserrat);
 	min-height: 100vh;
 	touch-action: manipulation;
 }
@@ -13,16 +17,21 @@ html,body {
   text-align: center;
 }
 
+/* Header */
 .title {
 	color: var(--white);
+	font-family: var(--limelight);
+	font-size: 40px;
 	margin-top: 10px;
 	margin-bottom: 0;
 }
 
+/* notes */
 .notes {
 	display: none;
 }
 
+/* keyboard */
 .keyboard {
 	display: flex;
 	height: 20vw;
@@ -68,6 +77,7 @@ html,body {
 	border-radius: 100%;
 	display: flex;
 	font-size: 18px;
+	font-weight: bold;
 	height: 40px;
 	flex-direction: column;
 	justify-content: center;
@@ -80,6 +90,7 @@ html,body {
 	border-color: var(--black);
 }
 
+/* cards */
 .card__cards {
 	display: flex;
 	justify-content: center;
@@ -87,8 +98,15 @@ html,body {
 
 .card__card {
 	background-color: var(--white);
-	margin: 20px;
+	border: 5px dashed;
+	margin: 10px 20px 20px;
 	padding: 20px;
+}
+
+.card__category {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 .card__notes {
@@ -99,5 +117,21 @@ html,body {
 .card__title {
 	font-weight: normal;
 	margin-top: 8px;
-	margin-bottom: 12px;
+	margin-bottom: 8px;
+}
+
+/* buttons */
+.button {
+	appearance: none;
+	box-shadow: none;
+	border: none;
+	background-color: var(--black);
+	color: var(--white);
+	cursor: pointer;
+	font-family: var(--montserrat);
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 10px 20px;
+	text-transform: uppercase;
 }

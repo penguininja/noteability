@@ -156,7 +156,6 @@ const cardCategory = "Standards"
 const cardTitle = "Don't Cry For Me, Argentina"
 const cardNotesPiano = "5-5 5 5-6 8 10 8-----8 10 10-8 13-8-6-5"
 const cardNotes = cardNotesPiano
-var cardModeKeyboard = false
 const cardNotesKeyboard = cardNotesPiano.replaceAll('10', '0')
 								.replaceAll('11', 'Q')
 								.replace('12', 'W')
@@ -165,6 +164,7 @@ const cardNotesKeyboard = cardNotesPiano.replaceAll('10', '0')
 								.replace('15', 'T')
 								.replace('16', 'Y')
 								.replace('17', 'U')
+var cardModeKeyboard = false
 
 class Cards extends React.Component {
 	
@@ -190,7 +190,7 @@ class Cards extends React.Component {
 		   	 		<div className="card__category">{cardCategory}</div>
 					<h2 className="card__title">{cardTitle}</h2>
 					<div className="card__notes">{this.state.cardNotes}</div>
-					<button onClick={this.toggleMode.bind(this)}>Toggle</button>
+					<button className="button" onClick={this.toggleMode.bind(this)}>Toggle Note Mode</button>
 				</div>
 			</div>
 		);
