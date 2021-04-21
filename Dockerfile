@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nodejs-14
+FROM node:15-buster-slim
 
 ADD . .
 
