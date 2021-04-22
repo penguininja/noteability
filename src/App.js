@@ -193,7 +193,7 @@ function convertCardNotesPiano(notes) {
 class Cards extends React.Component {
 	
     state = {
-		song: songs[1],
+		song: song,
     }	
 	
 	toggleMode(notes) {
