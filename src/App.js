@@ -178,8 +178,7 @@ function convertCardNotesKeyboard(notes) {
 function convertCardNotesPiano(notes) {
 	notes = String(notes)
 	notes = notes.replaceAll('-0', '-10')
-			.replaceAll(' 0', ' 10')
-			.replaceAll('^0', ' 10')	
+			.replaceAll(' 0', ' 10')	
 			.replaceAll('Q', '11')
 			.replaceAll('W', '12')
 			.replaceAll('E', '13')
@@ -187,6 +186,7 @@ function convertCardNotesPiano(notes) {
 			.replaceAll('T', '15')
 			.replaceAll('Y', '16')
 			.replaceAll('U', '17')
+	notes = notes.indexOf( '0' ) == 0 ? notes = notes.replace( '0', '10' ) : notes;
 	return notes
 }
 
