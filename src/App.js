@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { Component } from "react";
 import { useEffect } from "react";
+import { songs } from "./songs";
 
 function CreateNotes() {
 	const n = 17
@@ -10,7 +11,7 @@ function CreateNotes() {
 	    // note: we are adding a key prop here to allow react to uniquely identify each
 	    // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
 	    notes.push(	
-			<li>
+			<li key={i}>
 				<audio preload="auto" id={"note-" + i}>
 	            	<source src={"/notes/noteability" + i + ".mp3"}></source>
 				</audio>
@@ -152,47 +153,103 @@ function Keyboard(props) {
 	);
 }
 
-const cardCategory = "Standards"
-const cardTitle = "Don't Cry For Me, Argentina"
-const cardNotesPiano = "5-5 5 5-6 8 10 8-----8 10 10-8 13-8-6-5"
-const cardNotes = cardNotesPiano
-const cardNotesKeyboard = cardNotesPiano.replaceAll('10', '0')
-								.replaceAll('11', 'Q')
-								.replace('12', 'W')
-								.replace('13', 'E')
-								.replace('14', 'R')
-								.replace('15', 'T')
-								.replace('16', 'Y')
-								.replace('17', 'U')
+var song = {
+	"category": "Category",
+	"title": "Song Title",
+	"notes": "Click New Song to Begin!"
+}	
+
+var cardNotes = song.notes
 var cardModeKeyboard = false
+
+function convertCardNotesKeyboard(notes) {
+	notes = String(notes)
+	notes = notes.replaceAll('10', '0')
+			.replaceAll('11', 'Q')
+			.replaceAll('12', 'W')
+			.replaceAll('13', 'E')
+			.replaceAll('14', 'R')
+			.replaceAll('15', 'T')
+			.replaceAll('16', 'Y')
+			.replaceAll('17', 'U')
+	return notes
+}
+
+function convertCardNotesPiano(notes) {
+	notes = String(notes)
+	notes = notes.replaceAll('-0', '-10')
+			.replaceAll(' 0', ' 10')
+			.replaceAll('^0', ' 10')	
+			.replaceAll('Q', '11')
+			.replaceAll('W', '12')
+			.replaceAll('E', '13')
+			.replaceAll('R', '14')
+			.replaceAll('T', '15')
+			.replaceAll('Y', '16')
+			.replaceAll('U', '17')
+	return notes
+}
 
 class Cards extends React.Component {
 	
     state = {
-		cardNotes: cardNotesPiano
+		song: song,
     }	
 	
-	toggleMode() {
+	toggleMode(notes) {
+		var tempSong = this.state.song
+		
 		if (cardModeKeyboard == false) {
-			this.setState({cardNotes: cardNotesKeyboard})	
+			tempSong.notes = convertCardNotesKeyboard(tempSong.notes)
 			cardModeKeyboard = true
 		}
 		else {
-			this.setState({cardNotes: cardNotesPiano})		
+			tempSong.notes = convertCardNotesPiano(tempSong.notes)
 			cardModeKeyboard = false
+		}
+		this.setState({song: tempSong});
+	}
+	
+	checkMode() {
+		var tempSong = this.state.song
+		if (cardModeKeyboard == false) {
+			tempSong.notes = convertCardNotesPiano(tempSong.notes)
+		}
+		else {
+			tempSong.notes = convertCardNotesKeyboard(tempSong.notes)
+		}
+		this.setState({song: tempSong});		
+	}
+
+	nextCard() {
+		if (songs.length) {
+			var numSongs = songs.length
+			var randomInt = Math.floor(Math.random() * numSongs)
+			console.log(randomInt)
+			this.setState(
+			  {
+			    song: songs[randomInt]
+			  },
+			  this.checkMode
+			);	
 		}
 	}
 	
   	render() {
 		return (
-			<div className="card__cards">
-				<div className="card__card">
-		   	 		<div className="card__category">{cardCategory}</div>
-					<h2 className="card__title">{cardTitle}</h2>
-					<div className="card__notes">{this.state.cardNotes}</div>
-					<button className="button" onClick={this.toggleMode.bind(this)}>Toggle Note Mode</button>
+			<div className="card__wrapper">
+				<div className="deck__actions">
+					<button className="button button--white" onClick={this.nextCard.bind(this)}>New Song</button>
 				</div>
-			</div>
+				<div className="card__cards">
+					<div className="card__card">
+		   	 			<div className="card__category">{this.state.song.category}</div>
+						<h2 className="card__title">{this.state.song.title}</h2>
+						<div className="card__notes">{this.state.song.notes}</div>
+						<button className="button" onClick={this.toggleMode.bind(this)}>Toggle Note Mode</button>
+					</div>
+				</div>
+			</div>	
 		);
 	}
 }
