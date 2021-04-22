@@ -193,7 +193,7 @@ function convertCardNotesPiano(notes) {
 class Cards extends React.Component {
 	
     state = {
-		song: song,
+		song: songs[1],
     }	
 	
 	toggleMode(notes) {
@@ -239,14 +239,14 @@ class Cards extends React.Component {
 		return (
 			<div className="card__wrapper">
 				<div className="deck__actions">
-					<button className="button button--white" onClick={this.nextCard.bind(this)}>New Song</button>
+					<button className="button button--secondary" onClick={this.toggleMode.bind(this)}>Toggle Note Mode</button>
 				</div>
 				<div className="card__cards">
 					<div className="card__card">
 		   	 			<div className="card__category">{this.state.song.category}</div>
 						<h2 className="card__title">{this.state.song.title}</h2>
 						<div className="card__notes">{this.state.song.notes}</div>
-						<button className="button" onClick={this.toggleMode.bind(this)}>Toggle Note Mode</button>
+						<button className="button" onClick={this.nextCard.bind(this)}>New Song</button>
 					</div>
 				</div>
 			</div>	
