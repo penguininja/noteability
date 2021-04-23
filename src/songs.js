@@ -6,6 +6,36 @@ export const songs = [
 	},
 	{
 		"category": "Traditional",
+		"title": "O Canada!",
+		"notes": "7---10--10 3-------8---12--12 5-------10---11--11 12-8-7-5-3---5---3",
+	},	
+	{
+		"category": "Traditional",
+		"title": "The Star-Spangled Banner",
+		"notes": "8 5 1-5-8-13---17 15 13-5-7-8",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Yesterday",
+		"notes": "3 1 1-------5 7 9 10 12 13 12 10 10",
+	},	
+	{
+		"category": "Oldies",
+		"title": "I Saw Mama Kissing Santa Claus",
+		"notes": "3--5 7 10 12 15 14--10 7",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Nowhere Man",
+		"notes": "8-8-13---12 10-8----6-6-10-10-8 6-5",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Frere Jacques",
+		"notes": "6 8 10 6 6 8 10 6 10 11 13-10 11 13",
+	},	
+	{
+		"category": "Traditional",
 		"title": "Do-Re-Mi",
 		"notes": "6--8 10--6 10-6-10---8--10 11 11 10 8 11",
 	},	
