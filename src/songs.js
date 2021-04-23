@@ -5,6 +5,151 @@ export const songs = [
 		"notes": "",
 	},
 	{
+		"category": "Musicals",
+		"title": "Seventy-Six Trombones",
+		"notes": "10 12 14 15--10--7--5-3 2-12 10",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Hey Hey We're The Monkees",
+		"notes": "10-10 8 6 10-10-----1 6-6 6 8 6 8-10",
+	},		
+	{
+		"category": "TV & Movies",
+		"title": "Gilligan's Island",
+		"notes": "1 3 10 10 10 8 5 1 1 3 10 10 10 8",
+	},
+	{
+		"category": "Musicals",
+		"title": "I Could Have Danced All Night",
+		"notes": "4 8 11 16-----15-15----3 8 11 15-----13-13",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "Theme From Jeopardy",
+		"notes": "8-13-8-1-8-13-8---8-13-8-13-17--15 13 12 10 9 8",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "If I Only Had a Brain",
+		"notes": "10-11 13-10 6-8 10 6---8 10-6 3-5 6 3---3 1-1 1-1 1",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Cat's in the Cradle",
+		"notes": "3 3-10 10--10 6 8 10 10----6 8-8 8 8-6 8 10-3 3",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Alouette",
+		"notes": "6--8 10-10-8-6 8 10 6-1",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Leaving On a Jet Plane",
+		"notes": "6 8 11-10 6----1 3 3 6 8---6 11-10 6--1-3-6-8",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Sweet Caroline",
+		"notes": "10-1 3 3-11 10 3-3 11 11 10 8 6 1",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Eleanor Rigby",
+		"notes": "6 8 10 6-3--6 8 10 13-12 10 12-10 8 10-8 6 8",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Hey Jude",
+		"notes": "8-5----5 8 10 3-----3 5 6-13--13 12 8 10 8 5",
+	},	
+	{
+		"category": "Pop",
+		"title": "Killing Me Softly",
+		"notes": "13 13 13 13-10 5 8-6------12 12 12 12-8 3 5",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Let It Snow",
+		"notes": "1 1 13 13 11-10-8-6-1---1 1 8--6 8--6 5-1",
+	},	
+	{
+		"category": "Oldies",
+		"title": "I Can't Help Falling In Love With You",
+		"notes": "6---13---6-----8 10 11---10---8-----1-3---5---6---8 10-11 10---8---6",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Joy to the World",
+		"notes": "13---12--10 8-----6-5---3---1",
+	},	
+	{
+		"category": "Musicals",
+		"title": "Oklahoma",
+		"notes": "13----------8 6 5 3 1 3-8-8-7 8 10 8",
+	},	
+	{
+		"category": "Oldies",
+		"title": "The Lion Sleeps Tonight",
+		"notes": "6-8 10-8-10 11-10 8-6-8 10-8 6-10--8",
+	},	
+	{
+		"category": "Musicals",
+		"title": "Give My Regards to Broadway",
+		"notes": "8 10-12 13-15-13---12--8 10 10 10 10 12-12-8",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "Flinstones",
+		"notes": "8-1--13-10 8-1--8-6 5 5 6 8 1-3-5",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Little Old Lady From Pasadena",
+		"notes": "5 3 1 1 3-5 5 8-11-10 5-8",
+	},	
+	{
+		"category": "Traditional",
+		"title": "America (My Country Tis of Thee)",
+		"notes": "6-6-8-5--6 8-10-10-11-10--8 6-8-6-5-6",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "Theme From Rocky",
+		"notes": "10 13--15-----------15 17--10-----------10 13--15-----------15 17--10",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Wouldn't It Be Nice",
+		"notes": "12 10 8 10 3-8-8-3 10-8 8-12 10 8 10 5-10 10-12 5-3 1",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Hail to the Chief",
+		"notes": "8--10-12 13--12-10 8-10 8-5 3--1",
+	},	
+	{
+		"category": "Oldies",
+		"title": "A Hard Day's Night",
+		"notes": "5 6 5 8---8---8----6 8 6 8 11---8 6 8 5",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "Twilight Zone",
+		"notes": "13 14 13 10 13 14 13 10 13 14 13 10 13 14 13 10",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Desperado",
+		"notes": "10--8 8 6---10 8 6 3 6 3 8-6-8 10 13 10 15-13-1 10 8-8",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Auld Lang Syne",
+		"notes": "1-6--5 6-10-8--7 8-10 8 6--6 10-13-15",
+	},	
+	{
 		"category": "TV & Movies",
 		"title": "Raindrops Keep Falling On My Head",
 		"notes": "10-10 10 11 10 8 6 10------1 13-13 13 15 13 11 10 10-11-8-6-15",
