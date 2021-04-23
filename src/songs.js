@@ -80,7 +80,7 @@ export const songs = [
 		"notes": "8--3 8 3 8 10 12---8---13--13 8-10-12",
 	},	
 	{
-		"category": "Olides",
+		"category": "Oldies",
 		"title": "Happy Together",
 		"notes": "1 6 8 9 8 9--8 9---13-11 9 8 6 8 6 8--6 4 6 8",
 	},	
@@ -165,7 +165,7 @@ export const songs = [
 		"notes": "6 6 8 10 6 10 8 1 6 6 8 10 6-5",
 	},	
 	{
-		"category": "Olides",
+		"category": "Oldies",
 		"title": "Yellow Submarine",
 		"notes": "8--8--8--8-10 3-3 3-3 3-----3-3 3-3 3-----1-1 1-1 1",
 	},		

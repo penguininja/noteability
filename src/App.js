@@ -153,14 +153,24 @@ function Keyboard(props) {
 	);
 }
 
+function shuffleFisherYates(array) {
+  let i = array.length;
+  while (i--) {
+    const ri = Math.floor(Math.random() * (i + 1));
+    [array[i], array[ri]] = [array[ri], array[i]];
+  }
+  return array;
+}
+
 var song = {
-	"category": "Category",
-	"title": "Song Title",
+	"category": "Welcome!",
+	"title": "Use the Virtual Keyboard or Your Computer Keyboard to Play",
 	"notes": "Click New Song to Begin!"
-}	
+}
 
 var cardNotes = song.notes
 var cardModeKeyboard = false
+var songsShuffled = shuffleFisherYates([...songs])
 
 function convertCardNotesKeyboard(notes) {
 	notes = String(notes)
@@ -194,7 +204,8 @@ class Cards extends React.Component {
 	
     state = {
 		song: song,
-    }	
+		songsShuffled: songsShuffled,
+    }
 	
 	toggleMode(notes) {
 		var tempSong = this.state.song
@@ -222,24 +233,39 @@ class Cards extends React.Component {
 	}
 
 	nextCard() {
-		if (songs.length) {
-			var numSongs = songs.length
-			var randomInt = Math.floor(Math.random() * numSongs)
-			console.log(randomInt)
+		if (this.state.songsShuffled.length) {
 			this.setState(
 			  {
-			    song: songs[randomInt]
+				 song: this.state.songsShuffled.pop()
 			  },
 			  this.checkMode
 			);	
 		}
+		else {
+			var endTitle = {
+				"category": "Congrats!",
+				"title": "You've Played All the Songs",
+				"notes": "Click Shuffle Deck to Start Over"
+			}
+			this.setState({song: endTitle});		
+		}
 	}
+	
+	shuffleDeck() {
+		this.setState(
+		  {
+			 songsShuffled: shuffleFisherYates([...songs])
+		  },
+		  this.nextCard()
+		);
+	}	
 	
   	render() {
 		return (
 			<div className="card__wrapper">
 				<div className="deck__actions">
-					<button className="button button--secondary" onClick={this.toggleMode.bind(this)}>Toggle Note Mode</button>
+					<button className="button button--secondary" onClick={this.shuffleDeck.bind(this)}>Shuffle Deck</button>
+					<button className="button button--secondary" onClick={this.toggleMode.bind(this)}>Toggle Keyboard Mode</button>
 				</div>
 				<div className="card__cards">
 					<div className="card__card">
@@ -258,7 +284,7 @@ function App() {
 	return (
     	<div className="App">
       		<header className="App-header">
-	  			<h1 className="title">Noteability</h1>
+	  			<h1 className="title">Note·Your·Forte</h1>
 		  	</header>
 		  	<Cards/>
 			<Keyboard/>
