@@ -247,7 +247,7 @@ class Cards extends React.Component {
 				"title": "You've Played All the Songs",
 				"notes": "Click Shuffle Deck to Start Over"
 			}
-			this.setState({song: endTitle});		
+			this.setState({song: endTitle});	
 		}
 	}
 	
@@ -256,7 +256,14 @@ class Cards extends React.Component {
 		  {
 			 songsShuffled: shuffleFisherYates([...songs])
 		  },
-		  this.nextCard()
+		  function() {
+  			this.setState(
+  			  {
+  				 song: this.state.songsShuffled.pop()
+  			  },
+  			  this.checkMode
+  			);		  	
+		  }
 		);
 	}	
 	
