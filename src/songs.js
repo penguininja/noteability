@@ -5,6 +5,71 @@ export const songs = [
 		"notes": "",
 	},
 	{
+		"category": "TV & Movies",
+		"title": "Raindrops Keep Falling On My Head",
+		"notes": "10-10 10 11 10 8 6 10------1 13-13 13 15 13 11 10 10-11-8-6-15",
+	},	
+	{
+		"category": "Oldies",
+		"title": "My Girl",
+		"notes": "1---3---6---8---1-1-3-10-8-6-8",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Sloop John B",
+		"notes": "1-10 10-10 10-11-10-----1-10--10-10 11-10",
+	},	
+	{
+		"category": "Oldies",
+		"title": "My Boyfriend's Back",
+		"notes": "1 6-1-3-1 1 6 6 1 1 3-1-11-11---10-8--8 10 6--6",
+	},	
+	{
+		"category": "Oldies",
+		"title": "All of Me",
+		"notes": "11-6 3--------11 13 11-10-----7-3-------8-----6-3--3 9 8-3 6-------4",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Three Blind Mice",
+		"notes": "5-3-1---5-3-1---8-6-6 5---8-6 6 5",
+	},	
+	{
+		"category": "Oldies",
+		"title": "The Sound of Silence",
+		"notes": "3 3 6 6 10 10 8--------1 1 1 5 5 8 8 6",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Fly Me to the Moon",
+		"notes": "13----12 10 8 6----8 10 13 12----10 8 6 5",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Good Day Sunshine",
+		"notes": "12--9--12--9------12--9--12--9------14--12--10--8",
+	},		
+	{
+		"category": "Traditional",
+		"title": "Hark! The Herald Angels Sing",
+		"notes": "1-6-6--5 6-10-10-8-13-13-13--11 10-8-10",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "Pink Panther",
+		"notes": "3 4 5 6----8 9----5 6-8 9-14 13-6 9-13 12------11 9 6 4 6",
+	},	
+	{
+		"category": "Oldies",
+		"title": "With a Little Help From My Friends",
+		"notes": "10 11 13 13-11 10 8-10 11 11-11 11 10-8 8 8-6 8 10",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Michelle",
+		"notes": "10-10--11 6-5 10 5 4 3 6 9 6 5-3 6 5",
+	},	
+	{
 		"category": "Traditional",
 		"title": "O Canada!",
 		"notes": "7---10--10 3-------8---12--12 5-------10---11--11 12-8-7-5-3---5---3",
@@ -110,12 +175,12 @@ export const songs = [
 		"notes": "5-8-13--8 5 5 8 8 13--8 5 5 8 8 13-15 13 12 8 8 8 8",
 	},
 	{
-		"category": "TV and Movies",
+		"category": "TV & Movies",
 		"title": "On the Good Ship Lollipop",
 		"notes": "8 7 8---5---8-13-5-8 7 8---6---8-12-3",
 	},	
 	{
-		"category": "TV and Movies",
+		"category": "TV & Movies",
 		"title": "Over the Rainbow",
 		"notes": "5---17---16-12 14 16-17-5---14---12",
 	},	
@@ -135,7 +200,7 @@ export const songs = [
 		"notes": "1-6---10 6 10---8-6---3-1",
 	},	
 	{
-		"category": "TV and Movies",
+		"category": "TV & Movies",
 		"title": "Adams Family",
 		"notes": "8 13-17 13-10 6-15--13 12-15 12-8 5-13",
 	},	
