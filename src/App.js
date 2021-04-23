@@ -164,11 +164,10 @@ function shuffleFisherYates(array) {
 
 var song = {
 	"category": "Welcome!",
-	"title": "Use the Virtual Keyboard or Your Computer Keyboard to Play",
+	"title": "Use the Virtual Keyboard or your Computer Keyboard to play. Dashes are rests.",
 	"notes": "Click New Song to Begin!"
 }
 
-var cardNotes = song.notes
 var cardModeKeyboard = false
 var songsShuffled = shuffleFisherYates([...songs])
 
