@@ -1,5 +1,115 @@
 export const songs = [
 	{
+		"category": "TV & Movies",
+		"title": "",
+		"notes": "17-15 13-10---17-15 13-15---17 15 13-10 8--17 15 13-10 8--17 15 13-17",
+	},
+	{
+		"category": "TV & Movies",
+		"title": "I Just Can't Wait to be King",
+		"notes": "1 5 8 13-13-13 10-6-8---1 5 8 13-13-13 15-12-8 ",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "Can You Feel the Love Tonight",
+		"notes": "15-----12 10----15-12-----8 5",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "A Whole New World",
+		"notes": "9 10-14-12----------9 10-14-12 7---10-9-9",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "My Heart Will Go On",
+		"notes": "6---8--1 13-11 10 8-10 11 10-8 6 5 6--6 1",
+	},	
+	{
+		"category": "Hip Hop",
+		"title": "Old Town Road",
+		"notes": "16 16 16 16-14-12-9 9 16 14-12 9-9 9 9--14---14 16 12-9-9",
+	},	
+	{
+		"category": "Rock",
+		"title": "Free Bird",
+		"notes": "12 15 12 10 10 12 10-8---10 10 8-8 8-5-3",
+	},	
+	{
+		"category": "TV & Movies",
+		"title": "Stayin' Alive",
+		"notes": "12---10---8---7---8 8 8 8---8 8 8 8",
+	},	
+	{
+		"category": "Hip Hop",
+		"title": "Rapper's Delight",
+		"notes": "5-5-5--5 5 7 8 10 12 14 15 17 10-10-10",
+	},	
+	{
+		"category": "Rock",
+		"title": "Under Pressure",
+		"notes": "15-15-15-15 15 15-10-----15-15-15-15 15 15-10",
+	},	
+	{
+		"category": "Pop",
+		"title": "Y.M.C.A.",
+		"notes": "8 11 8 11 8 11-13---11-13 11",
+	},	
+	{
+		"category": "Pop",
+		"title": "I Will Survive",
+		"notes": "10 10 10 10 10 10-12 13 12 10 10---10 10 10 10 8 8 8 10 8 8 6 6 5 5",
+	},	
+	{
+		"category": "Pop",
+		"title": "Don't Stop Believing",
+		"notes": "14 10 12 12-14--------10 10 10 10 17-17 14-12",
+	},	
+	{
+		"category": "Pop",
+		"title": "Call Me Maybe",
+		"notes": "10-2 5 10 5-2 2 5 14 10-10 14 15 14 10-10 14 12 12 10",
+	},
+	{
+		"category": "Pop",
+		"title": "Like a Prayer",
+		"notes": "6 6 6 5-8-6 6 6 6 5-8-6 10 10 10 8-11-10-6 6 10-8-6 3",
+	},	
+	{
+		"category": "Pop",
+		"title": "...Baby One More Time",
+		"notes": "13 13 13 13 13-13 15 12 8 8--6 8-------11 15 15 15 16 15 13",
+	},
+	{
+		"category": "Pop",
+		"title": "Love Yourself",
+		"notes": "5 5 7 9--9 7--5 9 9--7-5 5 7 9 5 9 5 7 5-5",
+	},	
+	{
+		"category": "Hip Hop",
+		"title": "Hey Ya!",
+		"notes": "17-15 13 12-12-13 12-10 8 10 12-13 12-10 8 10 12-13-12",
+	},	
+	{
+		"category": "Pop",
+		"title": "Sk8ter Boi",
+		"notes": "13 13 13 15 13 10--13 13 13 15 13 10--6 6 6 5 5 8 5 6",
+	},	
+	{
+		"category": "Hip Hop",
+		"title": "Girls",
+		"notes": "13-13-8-8-13-13 8--9-10-10-5-5-10-10 5--8-13",
+	},	
+	{
+		"category": "R&B",
+		"title": "Rehab",
+		"notes": "8 8 10 13 10 13-10 15-10 8 10 13--13--10 13-10 13",
+	},	
+	{
+		"category": "Pop",
+		"title": "I Want It That Way",
+		"notes": "7 10-----14-7--5--7 10-----14-7--12 10",
+	},	
+	{
 		"category": "Oldies",
 		"title": "Take Me Home, Country Roads",
 		"notes": "6 8 10-----10 6 8-----10 8 6-----10 13 15",
