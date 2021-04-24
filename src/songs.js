@@ -1,9 +1,84 @@
 export const songs = [
 	{
-		"category": "",
-		"title": "",
-		"notes": "",
-	},
+		"category": "Oldies",
+		"title": "Take Me Home, Country Roads",
+		"notes": "6 8 10-----10 6 8-----10 8 6-----10 13 15",
+	},	
+	{
+		"category": "Traditional",
+		"title": "This Land Is Your Land",
+		"notes": "6 8 10 11-11--11 6 8 10-10--1 6 10 8-8--8 6 8 10",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Mrs. Robinson",
+		"notes": "5 6 8 10-10 11 10 8 6-13 10 10 11 10 8 6 8 6",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Chestnuts Roasting on an Open Fire",
+		"notes": "1-13-12 10 8 6 5 5 5-----1-10-8 6 5 3 1",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Bridge Over Troubled Waters",
+		"notes": "15-13-11---10-8-8 6--3 6----8 11 13-15-11",
+	},	
+	{
+		"category": "Traditional",
+		"title": "This Old Man",
+		"notes": "8 5 8-8 5 8-10 8 6 5 3 5 6",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Old McDonald Had a Farm",
+		"notes": "6 6 6 1 3 3 1-10 10 8 8 6",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Downtown",
+		"notes": "6 6 6 6-6 6 6 8 11 8 6-10 13 10 11 15-6------11-6",
+	},	
+	{
+		"category": "Musicals",
+		"title": "Tomorrow",
+		"notes": "8-5 6 8-13--17 15 13--17-15 13 12 10 15 12-8 5-13",
+	},	
+	{
+		"category": "Oldies",
+		"title": "The Boxer",
+		"notes": "5 6 8 8 8 8 8 5 5 6 8 8 13 12 10",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Rudolph the Red-Nosed Reindeer",
+		"notes": "8 10-8 5-13-10-8-----8 10 8 10 8-13-12",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Deck the Halls",
+		"notes": "13--11 10-8-6-8-10-6-8 10 11 8 10--8 6-5-6",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Oh! Susanna",
+		"notes": "1 3 5-8-8--10 8 5-1--3 5-5-3-1-3",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Puff the Magic Dragon",
+		"notes": "13--13 13-13-12---8---10---13-13-8",
+	},	
+	{
+		"category": "Traditional",
+		"title": "Row, Row, Row Your Boat",
+		"notes": "1--1--1-3 5--5-3 5-6 8",
+	},	
+	{
+		"category": "Oldies",
+		"title": "Eight Days a Week",
+		"notes": "10 8 6 8 8-3-3 6 11 11 10",
+	},	
 	{
 		"category": "Musicals",
 		"title": "Seventy-Six Trombones",
