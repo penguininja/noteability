@@ -1,6 +1,11 @@
 export const songs = [
 	{
 		"category": "TV & Movies",
+		"title": "Let It Go",
+		"notes": "3 5 6----1 10 8-----6 5 3 3 3-3-5 6",
+	},	
+	{
+		"category": "TV & Movies",
 		"title": "Under the Sea",
 		"notes": "17-15 13-10---17-15 13-15---17 15 13-10 8--17 15 13-10 8--17 15 13-17",
 	},
