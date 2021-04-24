@@ -13,7 +13,7 @@ function CreateNotes() {
 	    notes.push(	
 			<li key={i}>
 				<audio preload="auto" id={"note-" + i}>
-	            	<source src={"/notes/noteability" + i + ".mp3"}></source>
+	            	<source src={"/notes/note_" + i + ".mp3"}></source>
 				</audio>
 			</li>
 		);
